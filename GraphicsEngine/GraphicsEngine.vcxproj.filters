@@ -31,19 +31,19 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="shader.vs">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="shader.fs">
-      <Filter>Resource Files</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <Image Include="container.jpg">
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="awesomeface.png">
       <Filter>Resource Files</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader.vs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader.fs">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
