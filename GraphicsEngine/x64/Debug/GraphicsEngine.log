@@ -1,6 +1,6 @@
 ﻿  glad.c
   main.cpp
-C:\PostUniProjects\GraphicsEngine\GraphicsEngine\GraphicsEngine\shader.h(44,40): warning C4101: 'e': unreferenced local variable
+C:\PostUniProjects\GraphicsEngine\GraphicsEngine\GraphicsEngine\shader.h(56,40): warning C4101: 'e': unreferenced local variable
 glfw3.lib(context.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(context.obj)' or at 'C:\PostUniProjects\GraphicsEngine\GraphicsEngine\x64\Debug\glfw.pdb'; linking object as if no debug info
 glfw3.lib(init.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(init.obj)' or at 'C:\PostUniProjects\GraphicsEngine\GraphicsEngine\x64\Debug\glfw.pdb'; linking object as if no debug info
 glfw3.lib(input.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(input.obj)' or at 'C:\PostUniProjects\GraphicsEngine\GraphicsEngine\x64\Debug\glfw.pdb'; linking object as if no debug info
