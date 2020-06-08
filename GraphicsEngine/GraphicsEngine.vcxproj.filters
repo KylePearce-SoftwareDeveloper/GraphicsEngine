@@ -42,10 +42,16 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <None Include="shader.vs">
+    <None Include="colours.fs">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="shader.fs">
+    <None Include="colours.vs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="light_cube.fs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="light_cube.vs">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>

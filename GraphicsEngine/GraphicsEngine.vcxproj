@@ -157,8 +157,10 @@
     <Image Include="container.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="shader.fs" />
-    <None Include="shader.vs" />
+    <None Include="colours.fs" />
+    <None Include="colours.vs" />
+    <None Include="light_cube.fs" />
+    <None Include="light_cube.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
