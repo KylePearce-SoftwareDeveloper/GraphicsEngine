@@ -15,43 +15,37 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\cpp\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="glad.c">
+    <ClCompile Include="src\cpp\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="shader.h">
+    <ClInclude Include="src\hpp\camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="stb_image.h">
+    <ClInclude Include="src\hpp\shader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="camera.h">
+    <ClInclude Include="src\hpp\stb_image.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="container.jpg">
+    <Image Include="src\textures\awesomeface.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="awesomeface.png">
+    <Image Include="src\textures\container.jpg">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <None Include="colours.fs">
+    <None Include="src\shaders\light_cube.fs">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="colours.vs">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="light_cube.fs">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="light_cube.vs">
+    <None Include="src\shaders\light_cube.vs">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>

@@ -1,14 +1,14 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
+#include <stb_image.h>
 
 #include <glm/glm/glm.hpp>
 #include <glm/glm/gtc/matrix_transform.hpp>
 #include <glm/glm/gtc/type_ptr.hpp>
 
-#include "shader.h"
-#include "camera.h"
+#include <shader.h>
+#include <camera.h>
 
 #include <iostream>
 
@@ -79,8 +79,8 @@ int main()
 
     // build and compile our shader zprogram
     // ------------------------------------
-    Shader lightingShader("basic_lighting.vs", "basic_lighting.fs");
-    Shader lightCubeShader("light_cube.vs", "light_cube.fs");
+    Shader lightingShader("src/shaders/basic_lighting.vs", "src/shaders/basic_lighting.fs");
+    Shader lightCubeShader("src/shaders/light_cube.vs", "src/shaders/light_cube.fs");
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
@@ -176,8 +176,8 @@ int main()
 
     // load textures (we now use a utility function to keep the code more organized)
     // -----------------------------------------------------------------------------
-    unsigned int diffuseMap = loadTexture("container2.png");
-    unsigned int specularMap = loadTexture("container2_specular.png");
+    unsigned int diffuseMap = loadTexture("src/textures/container2.png");
+    unsigned int specularMap = loadTexture("src/textures/container2_specular.png");
 
     // shader configuration
     // --------------------

@@ -73,17 +73,25 @@
     <LinkIncremental>true</LinkIncremental>
     <LibraryPath>$(SolutionDir)Resources\Lib;$(LibraryPath)</LibraryPath>
     <IncludePath>$(SolutionDir)Resources\Include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(configuration)</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(configuration)</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>$(SolutionDir)Resources\Lib;$(LibraryPath)</LibraryPath>
-    <IncludePath>$(SolutionDir)Resources\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)GraphicsEngine\Resources\Lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)GraphicsEngine\src\hpp;$(SolutionDir)GraphicsEngine\Resources\Include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(configuration)</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(configuration)</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(configuration)</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(configuration)</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(configuration)</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(configuration)</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -144,23 +152,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="glad.c" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\cpp\glad.c" />
+    <ClCompile Include="src\cpp\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="camera.h" />
-    <ClInclude Include="shader.h" />
-    <ClInclude Include="stb_image.h" />
+    <ClInclude Include="src\hpp\camera.h" />
+    <ClInclude Include="src\hpp\shader.h" />
+    <ClInclude Include="src\hpp\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="awesomeface.png" />
-    <Image Include="container.jpg" />
+    <Image Include="src\textures\awesomeface.png" />
+    <Image Include="src\textures\container.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="colours.fs" />
-    <None Include="colours.vs" />
-    <None Include="light_cube.fs" />
-    <None Include="light_cube.vs" />
+    <None Include="src\shaders\light_cube.fs" />
+    <None Include="src\shaders\light_cube.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
