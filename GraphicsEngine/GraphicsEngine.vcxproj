@@ -152,13 +152,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\cpp\glad.c" />
+    <ClCompile Include="Resources\Include\glad\glad.c" />
     <ClCompile Include="src\cpp\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\hpp\camera.h" />
     <ClInclude Include="src\hpp\shader.h" />
-    <ClInclude Include="src\hpp\stb_image.h" />
+    <ClInclude Include="Resources\Include\stb_image\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\textures\awesomeface.png" />
